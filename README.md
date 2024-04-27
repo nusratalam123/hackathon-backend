@@ -1,3 +1,3 @@
-# Leather Backend
+# hackathon Backend
 
 Build with express JS & Mongodb

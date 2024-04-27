@@ -3,6 +3,7 @@ import authRoutes from "./../routes/auth.route";
 
 import userRoutes from "./../routes/user.route";
 import carRoutes from "./../routes/carPost.route";
+import bookingRoutes from "./../routes/book.route";
 const router = Router();
 
 // Root route
@@ -14,7 +15,7 @@ router.get("/", (_, res) => {
 router.use("/auth", authRoutes);
 router.use("/user", userRoutes);
 router.use("/car", carRoutes);
-
+router.use("/book", bookingRoutes);
 // Handle not found
 router.use((req, res, next) => {
   res.status(404).json({
